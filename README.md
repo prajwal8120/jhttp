@@ -1,6 +1,8 @@
 # JHTTP
 JHTTP is a simple HTTP server written in the Java 8.
 
+This repo is used in a Harness CI tutorial: https://developer.harness.io/tutorials/ci-pipelines/build/java
+
 
 
 ## Requirements
