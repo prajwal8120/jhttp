@@ -28,6 +28,6 @@ pipeline:
   properties:
     ci:
       codebase:
-        connectorRef: CI tutorials
-        repoName: https://github.com/Priyanshuranjan98/jhttp
+        connectorRef: CI_tutorials
+        repoName: jhttp
         build: <+input>
