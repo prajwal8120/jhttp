@@ -29,5 +29,24 @@ pipeline:
     ci:
       codebase:
         connectorRef: CI_tutorials
-        repoName: jhttp
         build: <+input>
+  notificationRules:
+    - name: test
+      identifier: test
+      pipelineEvents:
+        - type: AllEvents
+        - type: PipelineStart
+        - type: PipelineEnd
+        - type: PipelineSuccess
+        - type: PipelineFailed
+        - type: StageFailed
+        - type: StageSuccess
+        - type: StageStart
+        - type: StepFailed
+      notificationMethod:
+        type: Email
+        spec:
+          userGroups: []
+          recipients:
+            - priyanshuranjan.dbg@gmail.com
+      enabled: true
