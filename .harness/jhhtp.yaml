@@ -34,7 +34,7 @@ pipeline:
                     connectorRef: dockerconnector
                     repo: jhttp
                     tags:
-                      - test
+                      - ${buildNumber}
           platform:
             os: Linux
             arch: Amd64
